@@ -1,0 +1,139 @@
+/* Reset y estructura básica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estructura del body */
+body {
+  background-color: #b0e0a8; /* Fondo verde suave */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: black; /* Cambiado a negro */
+}
+
+/* Canvas */
+canvas {
+  width: 63vw; 
+  height: 90vh; 
+  border: 2px solid black;
+}
+
+/* Estilos de fondo animado */
+.green-bg {
+  background: linear-gradient(45deg, #14e937, #1aef16);
+  background-size: 400% 400%;
+  animation: gradientGreen 5s ease infinite;
+}
+
+.grey-bg {
+  background: linear-gradient(45deg, #65696a, #585555);
+  background-size: 400% 400%;
+  animation: gradientRed 5s ease infinite;
+}
+
+@keyframes gradientGreen {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientRed {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Contenedor del menú */
+#menu {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+}
+
+/* Estilos de etiquetas y select */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+select {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Estilo para el box superior */
+.header-box {
+  background-color: #009739; /* Verde de la bandera de Brasil */
+  color: #FFD700; /* Amarillo más suave */
+  padding: 15px 30px; /* Aumenta el relleno para hacerlo más grande */
+  border-radius: 8px;
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio debajo del box */
+}
+
+/* Modificaciones para el contenedor de botones */
+.menu {
+  text-align: center;
+  padding: 30px;
+  background-color: #d9f2d4; /* Fondo verde aún más suave */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: black; /* Letras en negro */
+  max-width: 600px; /* Ajusta el ancho máximo del contenedor */
+  width: 90%; /* Opción de ancho relativo */
+}
+
+/* Encabezados en el menú */
+.menu h1 {
+  font-size: 2.8rem; /* Letras de bienvenida más grandes */
+  margin-bottom: 50px;
+}
+
+.menu h2 {
+  font-size: 1.5rem; /* Letras un poco más grandes */
+  margin-bottom: 30px;
+}
+
+/* Botones */
+.menu button {
+  width: 200px; /* Tamaño fijo de botones */
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #4CAF50, #32CD32);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto hover en botones */
+.menu button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto activo en botones */
+.menu button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

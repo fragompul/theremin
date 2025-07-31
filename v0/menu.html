@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menú de Bienvenida</title>
+</head>
+<body>
+    <div class="header-box">BRASIL</div>
+
+    <div class="menu">
+        <h1>¡BIENVENIDO!</h1>
+        <h2>Elige una forma para comenzar:</h2>
+        <button onclick="irACirculo()">Círculo</button>
+        <button onclick="irACuadrado()">Cuadrado</button>
+        <button onclick="irARombo()">Rombo</button>
+    </div>
+
+    <script>
+        function irACirculo() {
+            localStorage.setItem('forma', 'circulo');
+            window.location.href = 'index.html';
+        }
+
+        function irACuadrado() {
+            localStorage.setItem('forma', 'cuadrado');
+            window.location.href = 'index.html';
+        }
+
+        function irARombo() {
+            localStorage.setItem('forma', 'rombo');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
