@@ -53,6 +53,8 @@ Este proyecto **no necesita instalación** especial más allá de un navegador y
 
 💡 Consejo: si la cámara no se activa, revisa los permisos del navegador.
 
+7. Para cambiar el color que detecta la pantalla, modificar Theremin.js.
+
 ## 📸 Ejemplo de uso
 
 Se adjunta un vídeo de ejemplo de uso.
